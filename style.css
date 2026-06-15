@@ -1,0 +1,179 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f5f5;
+    font-family:Arial,sans-serif;
+}
+.nav-item{
+	display: flex;
+	list-style: none;
+}
+.nav-item li{
+	margin: 0 15px;
+}
+.nav-item a{
+	text-decoration: none;
+	color: #333;
+	padding: 10px;
+	transition: .3s;
+}
+.nav-item a:hover{
+	color: #ff6b35;
+}
+.nav-item a.active{
+	color:#f59e0b;
+	font-weight: bold;
+}
+
+/* Logo */
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+	color: #ff6b35;
+	transition: 0.3S;
+	animation: glow 2s infinite alternate;
+}
+@keyframes glow{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.1);
+	}
+}
+.navbar-brand:hover{ 
+	transform: rotate(5deg) scale(1.1);
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    background-image:url("images/onlineshope.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:bold;
+	animation: slideDown 1.s ease;
+}
+@keyframes sildeDown{
+	from{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0)
+	}
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+/* Category Cards */
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:all .4s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-title{
+    font-weight:bold;
+    text-align:center;
+}
+
+/* Section Titles */
+section h2{
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.btn-warning{
+	transition: 0.3s;
+}
+.btn-warning:hover{
+	transition: translateY(-5px);
+}
+
+/* Featured Products */
+.card-body p{
+    font-size:18px;
+    color:#ff6b35;
+    font-weight:bold;
+}
+
+/* Why Choose Us */
+.bg-light h4{
+    color:#ff6b35;
+    margin-bottom:15px;
+}
+.wholesale{
+	background: #2563eb;
+	color: white;
+	margin-top: 60px;
+}
+.wholesale h2{
+	font-size: 40px;
+}
+.wholesale-card{
+	background: white;
+	color: #0f172a;
+	padding: 25px;
+	border-radius: 15px;
+	height: 100%;
+	transition: 0.3s;
+}
+.wholesale-card:hover{
+	transform: translateY(-8px);
+}
+.wholesale-card h4{
+	color: #2563eb;
+	margin-bottom: 10px;
+}
+
+/* Footer */
+footer{
+    margin-top:50px;
+}
+.signup-page{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5f7fa;
+}
+.signup-box{
+	width: 450px;
+	background: #fff;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.signup-box h2{
+	text-align: center;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
