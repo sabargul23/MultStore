@@ -1022,13 +1022,14 @@ margin-top:15px;
 
 }
 /* =====================================
-      HOME HERO (فقط صفحه اصلی)
+      HOME HERO (shop)
 ===================================== */
 
 .home-hero{
     background:linear-gradient(135deg,#fff7ed,#fde68a);
     padding:90px 0;
     overflow:hidden;
+	height: 500px;
 }
 
 .home-hero-tag{
