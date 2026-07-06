@@ -54,72 +54,87 @@ body{
     color:#f59e0b !important;
 }
 
-/* Search */
+/*================ NAVBAR RIGHT =================*/
 
-form.d-flex{
-    width:250px;
+.search-box{
+    display:flex;
+    align-items:center;
+    width:260px;
+    height:45px;
+    background:#fff;
+    border:2px solid #f59e0b;
+    border-radius:50px;
+    overflow:hidden;
 }
 
-.navbar .form-control{
-    border-radius:30px;
-    border:1px solid #ddd;
-    padding:10px 15px;
-}
-
- .navbar .form-control:focus{
-    border-color:#f59e0b;
-    box-shadow:none;
-}
-
-/* Search Button */
-
-.btn-warning{
-    background:#f59e0b;
+.search-box input{
+    flex:1;
     border:none;
+    outline:none;
+    padding:0 15px;
+    background:transparent;
+    font-size:15px;
+}
+
+.search-box button{
+    width:50px;
+    height:45px;
+    border:none;
+    background:#f59e0b;
     color:#fff;
+    cursor:pointer;
     transition:.3s;
 }
 
-.btn-warning:hover{
-    background:#f59e0b;
-    color:#fff;
+.search-box button:hover{
+    background:#d97706;
 }
 
-/* Cart */
-
-.btn.rounded-circle{
+.cart-btn{
     width:48px;
     height:48px;
+    background:#f59e0b;
+    color:#fff;
+    border-radius:50%;
     display:flex;
-    align-items:center;
     justify-content:center;
-    font-size:20px;
+    align-items:center;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
 }
 
-.badge{
+.cart-btn:hover{
+    background:#d97706;
+    color:#fff;
+    transform:scale(1.08);
+}
+
+.cart-count{
+    position:absolute;
+    top:-5px;
+    right:-5px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:red;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     font-size:11px;
+    font-weight:bold;
 }
 
-/* Mobile */
+@media(max-width:991px){
 
-@media (max-width:991px){
-
-    .navbar-nav{
-        text-align:center;
+    .search-box{
+        width:100%;
         margin-top:20px;
     }
 
-    .navbar-nav .nav-item{
-        margin:8px 0;
-    }
-
-    form.d-flex{
-        width:100%;
-        margin-top:15px;
-    }
-
-    .btn-warning{
-        margin-top:10px;
+    .cart-btn{
+        margin-top:20px;
     }
 
 }
@@ -552,10 +567,6 @@ width:100%;
 	margin-top: 15px;
 }
 
-.btn{
-	margin-top: 15px;
-	margin-right: 10px;
-}
 .btn-outline-warning:hover{
 	background: #f59e0b;
 	color:white;
