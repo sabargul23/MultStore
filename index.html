@@ -15,23 +15,32 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-       <a class="navbar-brand fw-bold fs-2" href="#">
-       Trade<span class="text-warning">Hub</span>
-       </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold fs-2" href="index.html">
+            Trade<span class="text-warning">Hub</span>
+        </a>
+
+        <!-- Mobile Button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav mx-auto">
+
                 <li class="nav-item">
-                    <a class="nav-link active " href="#">Home</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -49,54 +58,64 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
-				<li class="nav-item">
-				<a class="nav-link" href="contact.html">Contact</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="signup.html">Sign UP</a>
-				
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="login.html">Login</a>
-				</li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
 
             </ul>
 
-           <div class="d-flex align-items-center">
+            <!-- Search -->
+            <form class="d-flex me-3">
 
-    <!-- Search -->
-    <div class="search-box me-3">
-        <input type="text" placeholder="Search products...">
-        <button>
-            🔍
-        </button>
-    </div>
+                <input class="form-control"
+                       type="search"
+                       placeholder="Search products...">
 
-    <!-- Cart -->
-    <a href="cart.html" class="cart-btn">
-        🛒 Cart
-        <span class="cart-count">3</span>
-    </a>
+            </form>
 
-</div>
+            <!-- Search Button -->
+            <button class="btn btn-warning me-2">
+
+                <i class="bi bi-search"></i>
+
+            </button>
+
+            <!-- Cart -->
+
+            <a href="cart.html"
+               class="btn btn-warning position-relative rounded-circle">
+
+                <i class="bi bi-cart"></i>
+
+            </a>
 
         </div>
+
     </div>
+
 </nav>
 
 <!-- Hero Section -->
-<section class="hero text-white" >
+<section class="hero" >
     <div class="container">
-        <h1 class="display-4 fw-bold">
+        <h1>
             Welcome To TradeHub
         </h1>
 
-        <p class="lead">
+        <p>
             Shop Smart. Buy Wholesale. Grow Your Business.
         </p>
 
-        <a href="#" class="btn btn-warning btn-lg">
+        <a href="shop.html" class="btn">
             Shop Now
         </a>
     </div>
@@ -104,210 +123,266 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 	<!-- Best Seller -->
 <section class="container py-5 best-seller">
 
-    <h2 class="text-center mb-4">Best Seller</h2>
+    <div class="text-center mb-5">
+        <span class="seller-subtitle">⭐ Top Products</span>
+        <h2 class="seller-title">Best Seller</h2>
+        <p class="text-muted">
+            Explore our most popular products with the best prices.
+        </p>
+    </div>
 
-    <div class="row g-3 justify-content-center">
+    <div class="row g-4">
 
-        <!-- Card 1 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card h-100">
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card product-card">
                 <img src="images/phone3.jpg" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>iPhone 17</h6>
 
-                    <div class="text-warning mb-2">
+                <div class="card-body">
+
+                    <span class="badge bg-warning text-dark mb-2">
+                        Electronics
+                    </span>
+
+                    <h4>iPhone 17</h4>
+
+                    <div class="rating">
                         ★★★★★
+                        <small>(128)</small>
                     </div>
 
-                    <p>$899</p>
+                    <h3 class="price">$899</h3>
 
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="product.html" class="btn btn-warning btn-sm">
+                    <div class="d-flex gap-2 mt-3">
+
+                        <a href="product.html"
+                           class="btn btn-warning flex-fill">
                             Buy Now
                         </a>
 
-                        <a href="cart.html" class="btn btn-outline-warning btn-sm">
+                        <a href="cart.html"
+                           class="btn btn-outline-warning flex-fill">
                             Cart
                         </a>
+
                     </div>
+
                 </div>
             </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card h-100">
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card product-card">
+
                 <img src="images/labtop.jpg" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Laptop</h6>
 
-                    <div class="text-warning mb-2">
+                <div class="card-body">
+
+                    <span class="badge bg-warning text-dark mb-2">
+                        Electronics
+                    </span>
+
+                    <h4>Laptop</h4>
+
+                    <div class="rating">
                         ★★★★★
+                        <small>(96)</small>
                     </div>
 
-                    <p>$650</p>
+                    <h3 class="price">$650</h3>
 
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="product.html" class="btn btn-warning btn-sm">
+                    <div class="d-flex gap-2 mt-3">
+
+                        <a href="#" class="btn btn-warning flex-fill">
                             Buy Now
                         </a>
 
-                        <a href="cart.html" class="btn btn-outline-warning btn-sm">
+                        <a href="#" class="btn btn-outline-warning flex-fill">
                             Cart
                         </a>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
 
-        <!-- Card 3 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card h-100">
-                <img src="images/watch1.jpg" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Smart Watch</h6>
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6">
 
-                    <div class="text-warning mb-2">
-                        ★★★★★
-                    </div>
+            <div class="card product-card">
 
-                    <p>$120</p>
-
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="product.html" class="btn btn-warning btn-sm">
-                            Buy Now
-                        </a>
-
-                        <a href="cart.html" class="btn btn-outline-warning btn-sm">
-                            Cart
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card h-100">
                 <img src="images/shoes3.jpg" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Running Shoes</h6>
 
-                    <div class="text-warning mb-2">
+                <div class="card-body">
+
+                    <span class="badge bg-warning text-dark mb-2">
+                        Shoes
+                    </span>
+
+                    <h4>Running Shoes</h4>
+
+                    <div class="rating">
                         ★★★★★
+                        <small>(78)</small>
                     </div>
 
-                    <p>$80</p>
+                    <h3 class="price">$80</h3>
 
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="product.html" class="btn btn-warning btn-sm">
+                    <div class="d-flex gap-2 mt-3">
+
+                        <a href="#" class="btn btn-warning flex-fill">
                             Buy Now
                         </a>
 
-                        <a href="cart.html" class="btn btn-outline-warning btn-sm">
+                        <a href="#" class="btn btn-outline-warning flex-fill">
                             Cart
                         </a>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
 
-        <!-- Card 5 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card h-100">
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card product-card">
+
                 <img src="images/bags5.jpg" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Women Bag</h6>
 
-                    <div class="text-warning mb-2">
+                <div class="card-body">
+
+                    <span class="badge bg-warning text-dark mb-2">
+                        Bags
+                    </span>
+
+                    <h4>Women Bag</h4>
+
+                    <div class="rating">
                         ★★★★★
+                        <small>(64)</small>
                     </div>
 
-                    <p>$50</p>
-					
-                     <div class="d-flex justify-content-center gap-2">
-                        <a href="product.html" class="btn btn-warning btn-sm">
+                    <h3 class="price">$50</h3>
+
+                    <div class="d-flex gap-2 mt-3">
+<a href="#" class="btn btn-warning flex-fill">
                             Buy Now
                         </a>
 
-                        <a href="cart.html" class="btn btn-outline-warning btn-sm">
+                        <a href="#" class="btn btn-outline-warning flex-fill">
                             Cart
                         </a>
+
                     </div>
+
                 </div>
+
             </div>
-        </div>
 
-        <!-- Card 6 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card h-100">
-                <img src="images/fashion5.jpg" class="card-img-top">
-                <div class="card-body text-center">
-                    <h6>Makeup Kit</h6>
-
-                    <div class="text-warning mb-2">
-                        ★★★★★
-                    </div>
-
-                    <p>$35</p>
-
-                    <div class="d-flex justify-content-center gap-2">
-                        <a href="product.html" class="btn btn-warning btn-sm">
-                            Buy Now
-                        </a>
-
-                        <a href="cart.html" class="btn btn-outline-warning btn-sm">
-                            Cart
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </div>
 
-    <div class="text-center mt-4">
-        <a href="shop.html" class="btn btn-warning">
-            See More
+    <div class="text-center mt-5">
+
+        <a href="shop.html"
+           class="btn btn-warning btn-lg px-5">
+            See More →
         </a>
-    </div>
-
-</section>
-<section class="container wholesale-section">
-
-    <div class="card wholesale-card border-0">
-
-        <div class="row g-0 align-items-center">
-
-            <div class="col-lg-6">
-                <img src="images/background3.jpg" alt="">
-            </div>
-
-            <div class="col-lg-6 wholesale-content">
-
-                <h2>TradeHub Wholesale </h2>
-                  Buy products in bulk with the best wholesale prices.
-                    Trusted supplier for Electronics, Fashion, Shoes,
-                    Beauty and Home Products.
-                </p>
-
-                <p class="location">
-                    📍 Mandawi Market, Kabul, Afghanistan
-                </p>
-
-                <p class="phone">
-                    📞 +93 700 123 456
-                </p>
-
-                <a href="wholesale.html" class="btn">
-                    View Wholesale →
-                </a>
-
-            </div>
-
-        </div>
 
     </div>
+
+</section> 
+<section class="wholesale-section py-5">
+
+<div class="container">
+
+<div class="wholesale-card">
+
+<div class="row g-0">
+
+<!-- Left Image -->
+
+<div class="col-lg-7">
+
+<div class="wholesale-image">
+
+<img src="images/background3.jpg" class="img-fluid" alt="Wholesale">
+
+</div>
+
+</div>
+
+<!-- Right Content -->
+
+<div class="col-lg-5">
+
+<div class="wholesale-content">
+
+<h2>TradeHub Wholesale</h2>
+
+<p class="mb-4">
+
+Buy products in bulk with the best wholesale prices.
+Trusted supplier for Electronics, Fashion, Shoes,
+Beauty and Home Products.
+
+</p>
+
+<div class="info">
+
+<div class="info-item">
+
+<i class="bi bi-geo-alt-fill"></i>
+
+<span>Mandawi Market, Kabul, Afghanistan</span>
+
+</div>
+
+<div class="info-item">
+
+<i class="bi bi-telephone-fill"></i>
+
+<span>+93 700 123 456</span>
+
+</div>
+
+<div class="info-item">
+
+<i class="bi bi-envelope-fill"></i>
+
+<span>info@tradehub.com</span>
+
+</div>
+
+</div>
+
+<a href="wholesale.html" class="btn wholesale-btn">
+
+View Wholesale
+
+<i class="bi bi-arrow-right ms-2"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 <section class="bg-light py-5">
