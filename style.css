@@ -140,72 +140,115 @@ a{
     font-size:11px;
     font-weight:bold;
 }
+/* =========================
+        SHOP HERO
+========================= */
 
-/*=================================
-             HERO
-==================================*/
-
-/* HOME HERO */
-
-.hero{
-    background:linear-gradient(135deg,#2563eb,#4f46e5,#7c3aed);
-    border-radius:0 0 40px 40px;
-    min-height:450px;
-    display:flex;
-    align-items:center;
+.hero-shop{
+    background: linear-gradient(135deg,#fffaf3 0%,#ffe8c2 55%,#ffd28a 100%);
+    border-radius:25px;
+    margin:20px 0 40px;
+    padding:80px 60px;
     overflow:hidden;
-    color:#fff;
 }
 
-.hero h1{
-    font-size:56px;
+.hero-shop .badge-sale{
+    display:inline-block;
+    background:#fff;
+    color:#f59e0b;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:700;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.hero-shop h1{
+    font-size:58px;
     font-weight:800;
+    color:#222;
+    line-height:1.2;
+    margin:25px 0 15px;
 }
 
-.hero p{
-    font-size:22px;
-    color:#e5e7eb;
+.hero-shop h1 span{
+    color:#f59e0b;
 }
 
-.hero .btn-warning{
+.hero-shop p{
+    font-size:19px;
+    color:#666;
+    line-height:32px;
+    margin-bottom:30px;
+}
+
+.hero-shop .btn-warning{
     background:#f59e0b;
     border:none;
-    padding:14px 38px;
-    border-radius:40px;
-    font-weight:700;
-}
-
-.hero-image{
-    width:100%;
-    max-width:380px;
-}
-
-.hero-image img{
-    width:100%;
-    animation:float 4s ease-in-out infinite;
-}
-
-@keyframes float{
-0%{transform:translateY(0);}
-50%{transform:translateY(-12px);}
-100%{transform:translateY(0);}
-}
-
-.hero .btn{
-    background:#f59e0b;
     color:#fff;
-    padding:15px 40px;
-    border-radius:40px;
-    font-size:20px;
+    padding:14px 35px;
+    border-radius:35px;
     font-weight:700;
     transition:.3s;
 }
 
-.hero .btn:hover{
+.hero-shop .btn-warning:hover{
     background:#d97706;
-    transform:translateY(-5px);
+    transform:translateY(-3px);
 }
 
+.hero-shop img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:auto;
+}
+
+@media(max-width:992px){
+
+.hero-shop{
+    padding:50px 30px;
+    text-align:center;
+}
+
+.hero-shop h1{
+    font-size:42px;
+}
+
+.hero-shop p{
+    font-size:17px;
+}
+
+.hero-shop img{
+    max-width:340px;
+    margin-top:30px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-shop{
+    padding:40px 20px;
+}
+
+.hero-shop h1{
+    font-size:34px;
+}
+
+.hero-shop p{
+    font-size:15px;
+    line-height:28px;
+}
+
+.hero-shop img{
+    max-width:260px;
+}
+
+.hero-shop .btn-warning{
+    width:100%;
+}
+
+}
 
 
 /*==========================
@@ -726,50 +769,131 @@ a{
     }
 }
 
-/* ======================================
-   SHOP BANNER
-====================================== */
+/* ==========================
+Footer
+========================== */
 
-.shop-banner{
-    background:linear-gradient(135deg,#fff7eb,#ffe2b8);
-    border-radius:30px;
-    padding:80px 60px;
-    margin:40px 0;
+footer{
+    background:#212529;
+    color:#fff;
 }
 
-.sale-badge{
-    display:inline-block;
-    background:#fff;
-    color:#ff8800;
-    padding:10px 22px;
-    border-radius:50px;
-    font-weight:600;
+footer h3,
+footer h5{
+    margin-bottom:20px;
 }
 
-.shop-banner h1{
-    font-size:55px;
-    font-weight:800;
+footer a{
+    color:#ddd;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.shop-banner h1 span{
-    color:#ff8800;
+footer a:hover{
+    color:#f9a826;
+    padding-left:5px;
 }
 
-.shop-banner p{
-    color:#666;
-    font-size:19px;
-    line-height:32px;
+footer p{
+    color:#bbb;
+    line-height:1.8;
 }
 
-.shop-banner img{
-    max-width:100%;
-    border-radius:25px;
+footer hr{
+    border-color:#444;
 }
 
-.banner-features{
-    display:flex;
-    gap:30px;
-    font-weight:600;
+/* ==========================
+Hover Effects
+========================== */
+
+.btn{
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.main-image img{
+    transition:.4s;
+}
+
+.main-image img:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+Responsive
+========================== */
+
+@media(max-width:992px){
+
+.product-details h1{
+    font-size:30px;
+}
+
+.main-image{
+    margin-top:20px;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar-brand{
+    font-size:24px;
+}
+
+.product-details{
+    padding:40px 0;
+}
+
+.product-info{
+    padding:40px 0;
+}
+
+.card img{
+    height:180px;
+}
+
+.btn-lg{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.d-flex.gap-3{
+    display:block !important;
+}
+
+}
+
+@media(max-width:576px){
+
+.product-details h1{
+    font-size:26px;
+}
+
+h2{
+    font-size:28px;
+}
+
+.main-image{
+    padding:15px;
+}
+
+.img-thumbnail{
+    margin-bottom:10px;
+}
+
+.card img{
+    height:150px;
+}
+
+footer{
+    text-align:center;
+}
+
 }
 /* 32 cards */
 .products-section .card{
@@ -857,117 +981,107 @@ a{
   margin-bottom: 25px;
   font-weight: bold;
 }
-
-/* =========================
-        SHOP HERO
-========================= */
-
-.hero-shop{
-    background: linear-gradient(135deg,#fffaf3 0%,#ffe8c2 55%,#ffd28a 100%);
+/*========= home hero ======== */
+.home-hero{
+    background:linear-gradient(135deg,#4f46e5,#2563eb);
+    padding:70px 40px;
     border-radius:25px;
-    margin:20px 0 40px;
-    padding:80px 60px;
+    margin:25px 0;
     overflow:hidden;
-	min-height: 450px;
 }
 
-.hero-shop .badge-sale{
+.hero-content h1{
+    color:#fff;
+    font-size:60px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero-content h1 span{
+    color:#ff9f1c;
+}
+
+.hero-content p{
+    color:#f1f1f1;
+    font-size:22px;
+    margin:20px 0 35px;
+}
+
+.hero-btn{
+    background:#ff9f1c;
+    color:#fff;
+    padding:14px 40px;
+    border-radius:40px;
+    font-size:20px;
+    font-weight:700;
+}
+
+.hero-btn:hover{
+    background:#ff8800;
+    color:#fff;
+}
+
+.hero-badge{
     display:inline-block;
     background:#fff;
-    color:#f59e0b;
-    padding:10px 20px;
+    color:#ff9f1c;
+    padding:8px 18px;
     border-radius:30px;
-    font-weight:700;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-weight:600;
+    margin-bottom:20px;
 }
 
-.hero-shop h1{
-    font-size:56px;
-    font-weight:800;
-    color:#222;
-    line-height:1.2;
-    margin:25px 0 15px;
-}
-
-.hero-shop h1 span{
-    color:#f59e0b;
-}
-
-.hero-shop p{
-    font-size:19px;
-    color:#666;
-    line-height:32px;
-    margin-bottom:30px;
-}
-
-.hero-shop .btn-warning{
-    background:#f59e0b;
-    border:none;
-    color:#fff;
-    padding:14px 35px;
-    border-radius:35px;
-    font-weight:700;
-    transition:.3s;
-}
-
-.hero-shop .btn-warning:hover{
-    background:#d97706;
-    transform:translateY(-3px);
-}
-
-.hero-shop img{
+.hero-side-img{
     width:100%;
-    max-width:500px;
-    display:block;
-    margin:auto;
+    max-width:320px;
+    transition:.4s;
 }
 
-@media(max-width:992px){
-
-.hero-shop{
-    padding:50px 30px;
-    text-align:center;
+.hero-left{
+    transform:translateX(-15px);
 }
 
-.hero-shop h1{
+.hero-right{
+    transform:translateX(15px);
+}
+
+.hero-side-img:hover{
+    transform:scale(1.05);
+}
+
+@media(max-width:991px){
+
+.hero-content{
+    order:1;
+    margin:30px 0;
+}
+
+.hero-left{
+    order:2;
+}
+
+.hero-right{
+    order:3;
+}
+
+.hero-content h1{
     font-size:42px;
 }
 
-.hero-shop p{
-    font-size:17px;
+.hero-content p{
+    font-size:18px;
 }
 
-.hero-shop img{
-    max-width:340px;
-    margin-top:30px;
+.hero-side-img{
+    max-width:220px;
 }
 
-}
-
-@media(max-width:576px){
-
-.hero-shop{
-    padding:40px 20px;
-}
-
-.hero-shop h1{
-    font-size:34px;
-}
-
-.hero-shop p{
-    font-size:15px;
-    line-height:28px;
-}
-
-.hero-shop img{
-    max-width:260px;
 }
 
 .hero-shop .btn-warning{
     width:100%;
 }
 
-}
 /*===== Contact and About ==== */
 .about-hero{
   background: #f59e0b;
@@ -1009,4 +1123,15 @@ a{
 
 .carousel{
   margin-bottom: 0;
+}
+.contact-map{
+    background:#fff;
+    padding:10px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    overflow:hidden;
+}
+
+.contact-map iframe{
+    border-radius:15px;
 }
