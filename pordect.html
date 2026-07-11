@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeHub</title>
 
-<title>TradeHub | Product Details</title>
-
-<!-- Bootstrap 5.3.7 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap Icons -->
+    <!-- Bootstrap CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+	
+	<!-- Bootstrap Icons -->
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="style.css" rel="stylesheet" type="text/css">
-
 </head>
+
 <body>
-
-<!--==========================
- Navbar Start
-===========================-->
-
 <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
 
     <div class="container">
@@ -46,11 +40,11 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="pordect.html">Shop</a>
+                    <a class="nav-link" href="shop.html">Shop</a>
                 </li>
 
                 <li class="nav-item">
@@ -99,383 +93,507 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 	</div>
 </nav>
 
-<!--==========================
-Breadcrumb
-===========================-->
-
-<section class="bg-light py-3">
-
+<!-- Product Details Start -->
+<section class="product_card py-5">
 <div class="container">
 
-<nav>
+    <!-- Breadcrumb -->
+    <nav class="mb-4">
+        <small class="text-muted">
+            Home / Shop / Electronics / iPhone
+        </small>
+    </nav>
 
-<ol class="breadcrumb mb-0">
+    <div class="row">
 
-<li class="breadcrumb-item">
-<a href="#">Home</a>
+        <!-- Product Gallery -->
+        <div class="col-lg-6">
+
+            <div class="row">
+
+                <!-- Thumbnails -->
+                <div class="col-2">
+
+                    <div class="mb-3">
+                        <img src="images/pngwing.com (14).png" class="img-fluid border rounded p-2">
+                    </div>
+
+                    <div class="mb-3">
+                        <img src="images/pngwing.com (9).png" class="img-fluid border rounded p-2">
+                    </div>
+
+                    <div class="mb-3">
+                        <img src="images/pngwing.com (13).png" class="img-fluid border rounded p-2">
+                    </div>
+
+                    <div class="mb-3">
+                        <img src="images/pngwing.com (10).png" class="img-fluid border rounded p-2">
+                    </div>
+
+                </div>
+
+                <!-- Main Image -->
+                <div class="col-10">
+
+                    <div class="border rounded p-4 text-center bg-white">
+
+                        <img src="images/pngwing.com (1).png"
+                        class="img-fluid"
+                        alt="iPhone">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product Information -->
+        <div class="col-lg-6">
+
+            <span class="badge bg-warning text-dark mb-2">
+                Electronics
+            </span>
+
+            <h1 class="fw-bold mb-2">
+                iPhone
+            </h1>
+
+            <div class="mb-3">
+
+                ⭐⭐⭐⭐⭐
+
+                <span class="text-muted">
+                    (128 Customer Reviews)
+                </span>
+
+            </div>
+
+            <h2 class="text-warning fw-bold mb-3">
+                $899
+            </h2>
+
+            <p class="text-muted">
+
+                iPhone brings powerful performance,
+                advanced camera system and all-day battery
+                life for a premium smartphone experience.
+
+            </p>
+
+            <table class="table table-borderless">
+
+                <tr>
+                    <th>Brand</th>
+                    <td>Apple</td>
+                </tr>
+
+                <tr>
+                    <th>Category</th>
+                    <td>Electronics / Smartphone</td>
+                </tr>
+
+                <tr>
+                    <th>Material</th>
+                    <td>Aluminum + Glass</td>
+                </tr>
+
+                <tr>
+                    <th>Display</th>
+                    <td>6.1 inch Super Retina</td>
+                </tr>
+
+                <tr>
+                    <th>Storage</th>
+                    <td>256GB / 512GB</td>
+                </tr>
+
+            </table>
+ <!-- Color -->
+            <div class="mb-4">
+                <strong>Color :</strong>
+
+                <button class="btn btn-dark rounded-circle ms-3"
+                    style="width:22px;height:22px;"></button>
+
+                <button class="btn btn-primary rounded-circle"
+                    style="width:22px;height:22px;"></button>
+
+                <button class="btn btn-light border rounded-circle"
+                    style="width:22px;height:22px;"></button>
+            </div>
+
+            <hr>
+
+            <!-- Storage -->
+            <div class="mb-4">
+
+                <strong>Size :</strong>
+
+                <button class="btn btn-outline-secondary ms-3">
+                    128GB
+                </button>
+
+                <button class="btn btn-warning text-white">
+                    256GB
+                </button>
+
+                <button class="btn btn-outline-secondary">
+                    512GB
+                </button>
+
+                <button class="btn btn-outline-secondary">
+                    1TB
+                </button>
+
+            </div>
+
+            <!-- Quantity -->
+            <div class="mb-4 d-flex align-items-center">
+
+                <strong class="me-3">Quantity :</strong>
+
+                <button class="btn btn-outline-secondary">
+                    -
+                </button>
+
+                <input type="text"
+                    class="form-control text-center mx-2"
+                    value="1"
+                    style="width:70px;">
+
+                <button class="btn btn-outline-secondary">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Stock -->
+            <div class="mb-4">
+
+                <span class="text-success fw-bold">
+                    ✔ In Stock
+                </span>
+
+                <span class="text-muted ms-3">
+                    (Only 12 items left)
+                </span>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="d-flex gap-3 mb-5">
+
+                <button class="btn btn-warning text-white px-5 py-3">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    Add To Cart
+
+                </button>
+
+                <button class="btn btn-outline-warning px-5 py-3">
+
+                    Buy Now
+
+                </button>
+
+            </div>
+
+            <!-- Features -->
+
+            <div class="row text-center border-top pt-4">
+
+                <div class="col-md-4">
+
+                    <i class="fa-solid fa-truck fs-2 text-warning"></i>
+
+                    <h6 class="mt-2">
+                        Free Shipping
+                    </h6>
+
+                    <small class="text-muted">
+                        On all orders over $100
+                    </small>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <i class="fa-solid fa-rotate-left fs-2 text-warning"></i>
+
+                    <h6 class="mt-2">
+                        7 Days Return
+                    </h6>
+
+                    <small class="text-muted">
+                        Money Back Guarantee
+                    </small>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <i class="fa-solid fa-shield-halved fs-2 text-warning"></i>
+
+                    <h6 class="mt-2">
+                        Secure Payment
+                    </h6>
+
+                    <small class="text-muted">
+                        100% Secure Payment
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+<!-- Product Details End -->
+ <!-- Product Tabs -->
+<section class="py-5">
+<div class="container">
+
+<ul class="nav nav-tabs mb-4">
+
+<li class="nav-item">
+<a class="nav-link active" data-bs-toggle="tab" href="#description">
+Description
+</a>
 </li>
 
-<li class="breadcrumb-item">
-<a href="#">Shop</a>
+<li class="nav-item">
+<a class="nav-link" data-bs-toggle="tab" href="#information">
+Additional Information
+</a>
 </li>
 
-<li class="breadcrumb-item">
-<a href="#">Electronics</a>
+<li class="nav-item">
+<a class="nav-link" data-bs-toggle="tab" href="#reviews">
+Reviews (3)
+</a>
 </li>
 
-<li class="breadcrumb-item active">
+</ul>
 
-iPhone 
+<div class="tab-content">
 
-</li>
+<!-- Description -->
 
-</ol>
+<div class="tab-pane fade show active" id="description">
 
-</nav>
+<h3 class="fw-bold mb-3">
+Product Description
+</h3>
+
+<p class="text-muted">
+
+Experience the next generation smartphone with a powerful processor,
+stunning display, professional camera system and long battery life.
+Designed for performance, entertainment and everyday use.
+
+</p>
 
 </div>
 
+<!-- Additional Information -->
+
+<div class="tab-pane fade" id="information">
+
+<table class="table table-bordered">
+
+<tr>
+<th>Brand</th>
+<td>Apple</td>
+</tr>
+
+<tr>
+<th>Model</th>
+<td>iPhone 17</td>
+</tr>
+
+<tr>
+<th>Storage</th>
+<td>256GB</td>
+</tr>
+
+<tr>
+<th>Display</th>
+<td>6.1 inch OLED</td>
+</tr>
+
+<tr>
+<th>Warranty</th>
+<td>1 Year</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Reviews -->
+
+<div class="tab-pane fade" id="reviews">
+
+<div class="border rounded p-4 mb-3">
+
+<h5>John Smith</h5>
+
+<div class="text-warning">
+★★★★★
+</div>
+
+<p class="text-muted">
+
+Excellent quality and very fast delivery.
+
+</p>
+
+</div>
+
+<div class="border rounded p-4">
+
+<h5>David Lee</h5>
+
+<div class="text-warning">
+★★★★☆
+</div>
+
+<p class="text-muted">
+
+Very satisfied with this product.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 </section>
 
-<!--==========================
-Product Details
-===========================-->
+<!-- Related Products -->
 
-<section class="product-details py-5">
+<section class="py-5 bg-light">
 
 <div class="container">
 
-<div class="row">
+<div class="text-center mb-5">
 
-<!-- Left -->
-
-<div class="col-lg-6">
-
-<div class="row">
-
-<div class="col-2">
-
-<img src="images/pngwing.com (1).png"
-class="img-thumbnail mb-3">
-
-<img src="images/phone2.jpg"
-class="img-thumbnail mb-3">
-
-<img src="images/pngwing.com (13).png"
-class="img-thumbnail mb-3">
-
-<img src="images/pngwing.com (10).png"
-class="img-thumbnail">
-
-</div>
-
-<div class="col-10">
-
-<div class="main-image">
-
-<img
-src="images/pngwing.com (9).png"
-class="img-fluid rounded">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Right -->
-
-<div class="col-lg-6">
-
-<span class="badge bg-warning text-dark">
-
-Electronics
-
-</span>
-
-<h1 class="fw-bold mt-3">
-
-iPhone 17
-
-</h1>
-
-<div class="mb-3">
-
-<i class="bi bi-star-fill text-warning"></i>
-
-<i class="bi bi-star-fill text-warning"></i>
-
-<i class="bi bi-star-fill text-warning"></i>
-
-<i class="bi bi-star-fill text-warning"></i>
-
-<i class="bi bi-star-half text-warning"></i>
-
-<span class="text-muted">
-
-(128 Customer Reviews)
-
-</span>
-
-</div>
-
-<h2 class="text-warning fw-bold">
-
-$899
-
+<h2 class="fw-bold">
+Related Products
 </h2>
 
-<p class="text-muted mt-3">
-
-iPhone 17 brings powerful performance,
-advanced camera system and all-day battery
-life for a premium smartphone experience.
-
+<p class="text-muted">
+You may also like
 </p>
 
-<hr>
-
-<div class="row mb-3">
-
-<div class="col-4">
-
-<strong>Brand</strong>
-
 </div>
 
-<div class="col-8">
+<div class="row g-4">
 
-Apple
+<div class="col-lg-3 col-md-6">
 
-</div>
+<div class="card h-100">
 
-</div>
+<img src="images/pngwing.com.png"
+class="card-img-top">
 
-<div class="row mb-3">
+<div class="card-body text-center">
 
-<div class="col-4">
+<h5>Laptop</h5>
 
-<strong>Category</strong>
+<h4 class="text-warning">$1299</h4>
 
-</div>
-
-<div class="col-8">
-
-Electronics / Smartphone
-
-</div>
-
-</div>
-
-<div class="row mb-3">
-
-<div class="col-4">
-
-<strong>Material</strong>
-
-</div>
-
-<div class="col-8">
-
-Aluminum + Glass
-
-</div>
-
-</div>
-
-<div class="row mb-3">
-<div class="col-4">
-
-<strong>Display</strong>
-
-</div>
-
-<div class="col-8">
-
-6.1 inch Super Retina
-
-</div>
-
-</div>
-
-<div class="row mb-3">
-
-<div class="col-4">
-
-<strong>Storage</strong>
-
-</div>
-
-<div class="col-8">
-
-256GB / 512GB
-
-</div>
-
-</div>
- <!-- Color -->
-
-<div class="row mb-4">
-
-    <div class="col-4">
-        <strong>Color</strong>
-    </div>
-
-    <div class="col-8">
-
-        <button class="color black active"></button>
-
-        <button class="color blue"></button>
-
-        <button class="color silver"></button>
-
-    </div>
-
-</div>
-
-<!-- Storage -->
-
-<div class="row mb-4">
-
-    <div class="col-4">
-        <strong>Size</strong>
-    </div>
-
-    <div class="col-8">
-
-        <button class="btn btn-outline-warning me-2">
-            128GB
-        </button>
-
-        <button class="btn btn-warning me-2">
-            256GB
-        </button>
-
-        <button class="btn btn-outline-warning me-2">
-            512GB
-        </button>
-
-        <button class="btn btn-outline-warning">
-            1TB
-        </button>
-
-    </div>
-
-</div>
-
-<!-- Quantity -->
-
-<div class="row mb-4">
-
-    <div class="col-4">
-        <strong>Quantity</strong>
-    </div>
-
-    <div class="col-8 d-flex">
-
-        <button class="btn btn-outline-secondary">-</button>
-
-        <input
-        type="text"
-        value="1"
-        class="form-control text-center mx-2"
-        style="width:70px;">
-
-        <button class="btn btn-outline-secondary">+</button>
-
-    </div>
-
-</div>
-
-<p class="text-success fw-semibold">
-
-<i class="bi bi-check-circle-fill"></i>
-
-In Stock
-
-<span class="text-muted ms-3">
-
-Only 12 items left
-
-</span>
-
-</p>
-
-<div class="mt-4 d-flex gap-3">
-
-<button class="btn btn-warning btn-lg">
-
-<i class="bi bi-cart-plus"></i>
+<a href="#" class="btn btn-warning text-white w-100">
 
 Add To Cart
 
-</button>
-
-<button class="btn btn-outline-warning btn-lg">
-
-Buy Now
-
-</button>
+</a>
 
 </div>
 
-<hr class="my-5">
-
-<div class="row text-center">
-
-<div class="col-md-4">
-
-<i class="bi bi-truck fs-1 text-warning"></i>
-
-<h6 class="mt-3">
-
-Free Shipping
-
-</h6>
-
-<p class="text-muted">
-
-On orders over $100
-
-</p>
+</div>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-lg-3 col-md-6">
 
-<i class="bi bi-arrow-repeat fs-1 text-warning"></i>
+<div class="card h-100">
 
-<h6 class="mt-3">
+<img src="images/pngwing.com (2).png"
+class="card-img-top">
 
-7 Days Return
+<div class="card-body text-center">
 
-</h6>
+<h5>Apple Watch</h5>
 
-<p class="text-muted">
+<h4 class="text-warning">$399</h4>
 
-Money Back Guarantee
+<a href="#" class="btn btn-warning text-white w-100">
 
-</p>
+Add To Cart
+
+</a>
 
 </div>
 
-<div class="col-md-4">
+</div>
 
-<i class="bi bi-shield-check fs-1 text-warning"></i>
+</div>
 
-<h6 class="mt-3">
+<div class="col-lg-3 col-md-6">
 
-Secure Payment
+<div class="card h-100">
 
-</h6>
+<img src="images/phone1.jpg"
+class="card-img-top">
 
-<p class="text-muted">
+<div class="card-body text-center">
 
-100% Secure Payment
+<h5>Samsung S24</h5>
 
-</p>
+<h4 class="text-warning">$249</h4>
+
+<a href="#" class="btn btn-warning text-white w-100">
+
+Add To Cart
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="card h-100">
+
+<img src="images/pngwing.com (11).png"
+class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>iPad Pro</h5>
+
+<h4 class="text-warning">$899</h4>
+
+<a href="#" class="btn btn-warning text-white w-100">
+
+Add To Cart
+
+</a>
 
 </div>
 
@@ -488,153 +606,6 @@ Secure Payment
 </div>
 
 </section>
-<!-- =========================
-Product Information
-========================== -->
-<section class="container py-5">
-
-    <div class="row g-4">
-
-        <!-- Left -->
-        <div class="col-lg-8">
-
-            <ul class="nav nav-tabs mb-4">
-
-                <li class="nav-item">
-                    <button class="nav-link active">Description</button>
-                </li>
-
-                <li class="nav-item">
-                    <button class="nav-link">Additional Info</button>
-                </li>
-
-                <li class="nav-item">
-                    <button class="nav-link">Reviews</button>
-                </li>
-
-            </ul>
-
-            <div class="border rounded-4 p-4 shadow-sm bg-white">
-
-                <h3 class="mb-3">Product Description</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Right -->
-        <div class="col-lg-4">
-
-            <h4 class="mb-4 fw-bold">Related Products</h4>
-
-            <!-- Product -->
-            <div class="card mb-3 border-0 shadow-sm">
-                <div class="row g-0 align-items-center">
-
-                    <div class="col-4">
-                        <img src="images/phone4.jpg"
-                             class="img-fluid rounded-start">
-                    </div>
-
-                    <div class="col-8">
-
-                        <div class="card-body">
-
-                            <h6 class="mb-1">
-                                Samsung S24
-                            </h6>
-
-                            <small class="text-muted">
-                                Electronics
-                            </small>
-
-                            <h6 class="text-warning mt-2">
-                                $750
-                            </h6>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Product -->
-            <div class="card mb-3 border-0 shadow-sm">
-                <div class="row g-0 align-items-center">
-
-                    <div class="col-4">
-                        <img src="images/pngwing.com (11).png"
-                             class="img-fluid rounded-start">
-                    </div>
-
-                    <div class="col-8">
-
-                        <div class="card-body">
-
-                            <h6 class="mb-1">
-                                AirPods Pro
-                            </h6>
-
-                            <small class="text-muted">
-                                Electronics
-                            </small>
-
-                            <h6 class="text-warning mt-2">
-                                $249
-                            </h6>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Product -->
-            <div class="card mb-3 border-0 shadow-sm">
-                <div class="row g-0 align-items-center">
-
-                    <div class="col-4">
-                        <img src="images/pngwing.com (2).png"
-                             class="img-fluid rounded-start">
-                    </div>
-
-                    <div class="col-8">
-
-                        <div class="card-body">
-
-                            <h6 class="mb-1">
-                                Apple Watch
-                            </h6>
-
-                            <small class="text-muted">
-                                Electronics
-                            </small>
-
-                            <h6 class="text-warning mt-2">
-                                $399
-                            </h6>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
 <!-- ================= Footer ================= -->
 
 <footer class="footer mt-5">
@@ -753,9 +724,8 @@ Fashion, Shoes, Beauty and Home &amp; Living products.
 </div>
 
 </div>
+
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html
